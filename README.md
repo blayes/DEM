@@ -21,7 +21,7 @@
 * Citation
   If you use the code, then please cite the following two papers:
   - Van Dyk, D. A. (2000). Fitting mixed-effects models using efficient EM-type algorithms. Journal of Computational and Graphical Statistics, 9(1), 78-98.
-  - Srivastava, S., DePalma, G.R. and Liu, C. (2017). An Asynchronous Distributed Expectation-Maximization Algorithm For Massive Data: The DEM Algorithm. Under review at JCGS.
+  - Srivastava, S., DePalma, G.R. and Liu, C. (2018). An Asynchronous Distributed Expectation-Maximization Algorithm For Massive Data: The DEM Algorithm. Revision submitted to JCGS.
    
 * Contact
   Please email Sanvesh Srivastava (<sanvesh-srivastava@uiowa.edu>) if you have any questions related to the code.

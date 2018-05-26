@@ -43,8 +43,8 @@ if (mtd == 1) {
     nranef0 <- ncol(train$z); nfixef0 <- ncol(train$x)
     muBeta0 <- rep(0, nfixef0); sigBetaInv0 <- diag(0, nfixef0); nu0 <- -(2 + nfixef0); sig0 <- 0
     eta0 <- -(nranef0 + 1); tmat0 <- diag(0, nranef0);
-    dmat0 <- riwish(2 * nranef0, diag(1, nranef0))
-    errVar0 <- runif(1, 1, 10)
+    dmat0 <- diag(1, nranef0)
+    errVar0 <- 10
 
     rm(train)
     gc()

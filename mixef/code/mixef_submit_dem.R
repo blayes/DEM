@@ -102,8 +102,8 @@ if (mtd == 0) {
         nranef0 <- nranef[rid]; nfixef0 <- nfixef[fid]
         muBeta0 <- rep(0, nfixef0); sigBetaInv0 <- diag(0, nfixef0); nu0 <- -(2 + nfixef0); sig0 <- 0
         eta0 <- -(nranef0 + 1); tmat0 <- diag(0, nranef0);
-        dmat0 <- riwish(2 * nranef0, diag(1, nranef0))
-        errVar0 <- runif(1, 1, 10)
+        dmat0 <- diag(1, nranef0)
+        errVar0 <- 10
 
         res <- mixefEm(ylist0, fixefList0, ranefList0, rmatList0, niter = 1000, dmat0, errVar0, muBeta0, sigBetaInv0, sig0, nu0, eta0, tmat0)
         fname <- paste0("/Shared/ssrivastva/dem/mixef/result/em/em_res_", nms)
@@ -132,8 +132,8 @@ if (mtd == 0) {
         nranef0 <- nranef[rid]; nfixef0 <- nfixef[fid]
         muBeta0 <- rep(0, nfixef0); sigBetaInv0 <- diag(0, nfixef0); nu0 <- -(2 + nfixef0); sig0 <- 0
         eta0 <- -(nranef0 + 1); tmat0 <- diag(0, nranef0);
-        dmat0 <- riwish(2 * nranef0, diag(1, nranef0))
-        errVar0 <- runif(1, 1, 10)
+        dmat0 <- diag(1, nranef0)
+        errVar0 <- 10
 
         res <- mixefEm(ylist0, fixefList0, ranefList0, rmatList0, niter = 1000, dmat0, errVar0, muBeta0, sigBetaInv0, sig0, nu0, eta0, tmat0)
         fname <- paste0("/Shared/ssrivastva/dem/mixef/result/em/em_res_", nms)

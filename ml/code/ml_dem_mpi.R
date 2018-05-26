@@ -94,8 +94,8 @@ library(MCMCpack)
 nranef0 <- ncol(trainPart[[1]]$z[[1]]); nfixef0 <- ncol(trainPart[[1]]$x[[1]])
 muBeta0 <- rep(0, nfixef0); sigBetaInv0 <- diag(0, nfixef0); nu0 <- -(2 + nfixef0); sig0 <- 0
 eta0 <- -(nranef0 + 1); tmat0 <- diag(0, nranef0);
-dmat0 <- riwish(2 * nranef0, diag(1, nranef0))
-errVar0 <- runif(1, 1, 10)
+dmat0 <- diag(1, nranef0)
+errVar0 <- 10
 emat0 <- diag(1, nfixef0)
 
 parEst <- list(dmat = dmat0, errVar = errVar0, fixCovDivErr = emat0, fixMean = muBeta0)
